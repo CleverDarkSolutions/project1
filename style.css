@@ -1,0 +1,119 @@
+.welcomeText{
+    display: none;
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 40;
+    color: white;
+    text-align: center;
+    user-select: none;
+    opacity: 1;
+    transition-timing-function: ease;
+}
+
+.secondText{
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 40;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+.secondScene{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 80%;
+    height: 50px;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 30;
+    color: white;
+    user-select: none;
+    display: none;
+    text-align: center;
+    
+}
+
+.mainContent{
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    top: 20vh;
+    left: 13vw;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 40;
+    color: white;
+    text-align: center;
+    user-select: none;
+    display: none;
+}
+
+.navbar{
+    position: absolute;
+    left: -25vw;
+}
+
+.navElement{
+
+}
+
+#elementOne{
+    position: absolute;
+    left: 40vw;
+
+}
+
+.navElement:hover{
+    font-size: 45px;
+    cursor: pointer;
+}
+
+#elementTwo{
+    position: absolute;
+    left: 60vw;
+
+}
+
+#elementThree{
+    position: absolute;
+    left: 80vw;
+}
+
+#elementFour{
+    position: absolute;
+    left: 100vw;
+}
+
+.placeholder{
+    background: red;
+    position: absolute;
+    top: 20vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#placeholderOne{
+    left: 10vw;
+
+}
+
+#placeholderTwo{
+    left: 40vw;
+}
+
+#placeholderThree{
+    left: 70vw;
+}
+
+#placeHolderFour{
+    left: 100vw;
+
+}
