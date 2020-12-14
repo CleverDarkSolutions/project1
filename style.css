@@ -1,4 +1,14 @@
-.welcomeText{
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.welcomeText {
     display: none;
     width: 1400px;
     height: 400px;
@@ -14,23 +24,10 @@
     transition-timing-function: ease;
 }
 
-.secondText{
-    width: 1400px;
-    height: 400px;
-    position: absolute;
-    top: 500px;
-    left: 200px;
-    font-family: 'Xanh Mono', monospace;
-    font-size: 40;
-    color: white;
-    text-align: center;
-    user-select: none;
-}
-
-.secondScene{
-    position: absolute;
-    top: 100px;
-    left: 0px;
+.secondScene {
+    clear: both;
+    margin: 30px auto;
+    overflow: hidden;
     width: 80%;
     height: 50px;
     font-family: 'Xanh Mono', monospace;
@@ -39,15 +36,13 @@
     user-select: none;
     display: none;
     text-align: center;
-    
+
 }
 
-.mainContent{
-    width: 1400px;
+.mainContent {
+    width: 70%;
     height: 400px;
-    position: absolute;
-    top: 20vh;
-    left: 13vw;
+    margin: 50px auto 20px auto;
     font-family: 'Xanh Mono', monospace;
     font-size: 40;
     color: white;
@@ -56,43 +51,26 @@
     display: none;
 }
 
-.navbar{
-    position: absolute;
-    left: -25vw;
+.navElement {
+    float: left;
+    padding: 0;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
 }
 
-.navElement{
-
+.center {
+    margin: auto;
+    display: block;
+    text-align: center;
 }
 
-#elementOne{
-    position: absolute;
-    left: 40vw;
-
-}
-
-.navElement:hover{
+.navElement:hover {
     font-size: 45px;
     cursor: pointer;
 }
 
-#elementTwo{
-    position: absolute;
-    left: 60vw;
-
-}
-
-#elementThree{
-    position: absolute;
-    left: 80vw;
-}
-
-#elementFour{
-    position: absolute;
-    left: 100vw;
-}
-
-.placeholder{
+.placeholder {
     background: red;
     position: absolute;
     top: 20vw;
@@ -100,20 +78,34 @@
     height: 5vw;
 }
 
-#placeholderOne{
+#placeholderOne {
     left: 10vw;
 
 }
 
-#placeholderTwo{
+#placeholderTwo {
     left: 40vw;
 }
 
-#placeholderThree{
+#placeholderThree {
     left: 70vw;
 }
 
-#placeHolderFour{
+#placeHolderFour {
     left: 100vw;
 
+}
+
+@media screen and (max-width: 770px) {
+    .navElement {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .secondScene {
+        overflow: visible;
+        height: auto;
+    }
 }
