@@ -13,9 +13,16 @@ document.getElementsByClassName('wrapper')[0].appendChild(canvas);
 window.addEventListener('resize', function () {
     var width = window.innerWidth;
     var height = window.innerHeight;
-    renderer.setSize(width, height);
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
+    if (width > 770) {
+        renderer.setSize(width, height);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+    }
+    else{
+        renderer.setSize(width, 1500);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+    }
 })
 
 //const controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -290,6 +297,8 @@ document.getElementById("elementFour").addEventListener("click", function () {
 });
 
 //------------------------------------------------
+
+//if(document.querySelector('body').style.maxWidth == "")
 
 let update = function () {
     updateDots();

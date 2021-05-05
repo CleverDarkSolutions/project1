@@ -104,8 +104,18 @@ body {
         text-align: left;
     }
 
+    .welcomeText {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
     .secondScene {
         overflow: visible;
         height: auto;
+    }
+    .mainContent{
+        font-size: 30;
     }
 }
